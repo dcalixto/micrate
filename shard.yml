@@ -1,5 +1,5 @@
 name: micrate
-version: 0.15.1
+version: 0.15.2
 crystal: ">= 0.36.1, < 2.0.0"
 
 authors:
@@ -32,6 +32,8 @@ dependencies:
   sqlite3:
     github: crystal-lang/crystal-sqlite3
     version: ~> 0.19.0
+  logger:
+    github: dcalixto/logger.cr
 
 development_dependencies:
   spectator:
