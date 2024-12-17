@@ -37,6 +37,7 @@ CREATE TABLE users(id INT PRIMARY KEY, email VARCHAR NOT NULL);
 -- +micrate Down
 DROP TABLE users;
 ```
+
 Now run it using `micrate up`. This command will execute all pending migrations:
 
 ```
@@ -93,7 +94,7 @@ To use the Crystal API, add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   micrate:
-    github: amberframework/micrate
+    github: dcalixto/micrate
 ```
 
 This allows you to programatically use micrate's features. You'll see the `Micrate` module has an equivalent for every CLI command. If you need to use micrate's CLI without installing the tool (which could be convenient in a CI environment), you can write a runner script as follows:
@@ -114,7 +115,7 @@ Micrate::Cli.run
 
 ## Contributing
 
-1. Fork it ( https://github.com/amberframework/micrate/fork )
+1. Fork it ( https://github.com/dcalixto/micrate/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -122,4 +123,4 @@ Micrate::Cli.run
 
 ## Contributors
 
-- [juanedi](https://github.com/juanedi)  - creator, maintainer
+- [juanedi](https://github.com/juanedi) - creator, maintainer
